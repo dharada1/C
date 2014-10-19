@@ -1,0 +1,46 @@
+#include <stdio.h>
+
+void strcmp(const char *str1, const char *str2);
+{
+
+  int scan;
+  int n;
+  int temp;
+
+
+ for(scan=0;scan<no; scan++) 
+   { 
+     for(n=0; n < no; n++) 
+      { 
+	if(strcmp(str[scan],str[n]) == -1
+         { 
+	   temp = *(str+scan); 
+	   *(str+scam) = *(str+n); 
+            *(vc+n+1)= temp; 
+            
+         } 
+      } 
+   } 
+
+
+
+
+
+
+
+
+int main(void)
+{
+  int i, no;
+  chr *name[] = { "Yoda", "Kato", "Matsuyama", "Kudo", "Saot", "Izumiya", "ugawara", "Takahashi", "Suzuki", "Saito", "Endo", "Oyama", "Ito", "Nakayama", "Okuda", "Goto", "Baba", "Miyanaga", "Akiyama", "Seki", NULL };
+              
+  no = sizeof(name)/sizeof(name[0]);
+  strcmp(vc, no, 2);
+
+
+ for(i=0; i<no; i++) 
+   { 
+      printf("%d\n", vc[i]); 
+   } 
+ return 0;
+}

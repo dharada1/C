@@ -1,0 +1,54 @@
+#include <stdio.h>
+#include <math.h>
+#define n 5
+
+int main(void)
+{bash-4.1$ gcc -Wall -ansi -std=c89 prog12.c -lm -lc
+bash-4.1$ ./a.out
+4
+9
+2
+1
+6
+9.000000 2番目です
+1.000000 4番目です
+  float *p, x[n];
+  p = x;
+  float max, min;
+int maxnum, minnum;
+  int i=0;
+
+  
+  for(i=0; i<n; i++)
+    {
+      scanf("%f", &*(x+i));
+    
+
+      if(i==0)
+	{
+	  max = *(x+i);
+	  min = *(x+i);
+	}
+
+      else
+      {
+        if(max < *(x+i))
+	{
+	  max = *(x+i);
+	  maxnum = i+1;
+	}
+
+        if(min > *(x+i))
+	{
+	  min = *(x+i);
+	  minnum = i+1;
+	}
+      }
+    }
+
+  printf("%f %d番目です\n", max, maxnum);
+  printf("%f %d番目です\n", min, minnum);
+
+
+  return 0;
+}

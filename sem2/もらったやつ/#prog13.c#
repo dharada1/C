@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+int main(void)
+{
+
+  int i,j;
+  double a[100], *p = &a[0], z;
+
+  scanf("%lf", &a[0]);
+  printf("%f = %f\n", a[0],a[0]);
+
+  i = 1;
+  z=a[0];
+  while(i < 100)
+    {
+      scanf("%lf", &a[i]);
+      z += *(p+i);
+      printf("%f", a[0]);
+
+      for(j=1; j<(i+1); j++)
+	{
+	  printf(" + %f ", a[j]);
+	}
+
+      printf(" = %f\n",z);
+
+      if(a[i]==EOF)
+	{
+ 	  break;
+	}
+
+      i++;
+    }
+
+  return 0;
+}

@@ -1,0 +1,23 @@
+#include <stdio.h>
+#define 12
+
+
+/*つぎのプログラムが正しく動作するように，define文とaverage関数を完成させなさい．average関数は，double型の配列xの平均値を計算し，その結果を返す関数である．なお，sizeは配列xのサイズを表している．*/
+
+
+double average(double x[], int size)
+{
+  int i;
+  double s=0;
+  for(i=0;i<12;i++){
+    s=s+x[i];
+}
+
+int main(void)
+{
+  double x[] = {-4.1, -3.5, 0.1, 6.7, 12.1, 16.3, 20.5, 22.0, 17.6, 11.3, 4.6, -1.0};
+  
+  printf("average = %f\n", average(x, 12));
+  
+  return 0;
+}

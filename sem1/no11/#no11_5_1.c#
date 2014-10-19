@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main(void){
+  
+  char a[] = "This is a pen. That is a pencil.";
+
+  for(i=1;i<32;i++){
+    
+  }
+  a[11]='b';
+
+  printf("%s",a);
+
+ return 0;
+}

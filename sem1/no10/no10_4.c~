@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <math.h>
+
+double movedx;
+double movedy;
+
+void multiply(double a,double b,double c){
+  double A[1][1];
+  A[0][0] = cos(M_PI * c / 180.0);
+  A[0][1] = -sin(M_PI * c / 180.0);
+  A[1][0] = sin(M_PI * c / 180.0);
+  A[1][1] = cos(M_PI * c / 180.0);
+  movedx=A[0][0]*a + A[0][1]*b;
+  movedy=A[1][0]*a + A[1][1]*b;
+}
+
+
+int main(void)
+{
+  double x,y,theta;
+  scanf("%lf%lf%lf",&x,&y,&theta);
+  multiply(x,y,theta);
+  printf("%lf %lf\n",movedx,movedy);
+  return 0;
+}

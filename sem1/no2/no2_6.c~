@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <math.h>
+
+int main(void)
+{
+  double a;
+  double x;
+  double y;
+  x = cos(M_PI * a / 180.0);
+  y = sin(M_PI * a / 180.0);
+  printf("%d\n", x);
+  printf("%d\n", x);
+  return 0;
+}

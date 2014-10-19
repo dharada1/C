@@ -1,0 +1,62 @@
+#include <stdio.h>
+#define ROW 4
+#define COL 5
+
+int main(void)
+{
+  
+
+  int a[ROW][COL];
+
+  for(i=0; i<ROW; i++)
+    {
+      for(j=0; j<COL; j++)
+	{
+	  scanf("%d", &a[i][j]);
+	}
+    }
+
+
+
+ suma = 0;
+  for(i=0; i<ROW; i++)
+    {
+      for(j=0; j<COL; j++)
+	{
+	  suma = suma + *(*(a+i)+j); 
+	  printf("%3d",*(*(a+i)+j));
+	}   
+      printf("%3d\n", suma);
+      suma = 0;
+    }    
+
+
+  sumb=0;
+for(j=0; j<COL; j++)
+    {
+      for(i=0; i<ROW; i++)
+	{
+	  sumb = sumb + *(*(a+i)+j); 
+	}   
+      printf("%3d", sumb);
+      sumb = 0;
+    }    
+
+ SUM = 0;
+ for(i=0; i<ROW; i++)
+   {
+     for(j=0; j<COL; j++)
+       {
+       SUM += *(*(a + i) + j);
+       }
+
+   }
+
+ printf("%3d\n", SUM);
+
+
+
+
+return 0;
+
+}
